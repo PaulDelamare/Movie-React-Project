@@ -1,0 +1,27 @@
+.wishlistBtnDelete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  background: rgba(229, 62, 62, 0.9);
+  color: #fff;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.wishlistBtnDelete:hover {
+  background: rgb(230, 50, 50);
+  transform: translateY(-2px);
+}
+
+.trashIcon {
+  width: 15px;
+  margin-right: 0.5rem;
+  fill: #ddd;
+}
