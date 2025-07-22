@@ -10,7 +10,7 @@
 }
 
 .catBtn:hover {
-  background: var(--primary-light);
+  background: var(--primary);
 }
 
 .active {
@@ -29,7 +29,6 @@ button:focus-visible {
   outline: none;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
   .catBtn {
     padding: 0.4rem 0.8rem;
