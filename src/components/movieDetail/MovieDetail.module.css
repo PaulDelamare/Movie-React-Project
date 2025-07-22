@@ -62,27 +62,6 @@
   padding: 2rem;
 }
 
-.wishlistBtn {
-  background: var(--primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-  color: var(--grey);
-  border: none;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-  border-radius: 4px;
-  margin: 0 auto;
-}
-
-.wishlistBtn:hover {
-  background: #155fa0;
-  transform: translateY(-2px);
-}
 
 @media (max-width: 600px) {
   .top {
