@@ -1,0 +1,45 @@
+.catBtn {
+  padding: 0.6rem 1.2rem;
+  background: var(--text);
+  border: none;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  color: var(--grey);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.catBtn:hover {
+  background: var(--primary-light);
+}
+
+.active {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+.active:hover {
+  background: var(--primary);
+  color: white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .catBtn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .catBtn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+}
