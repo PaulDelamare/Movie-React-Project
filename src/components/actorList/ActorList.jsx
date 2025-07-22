@@ -1,5 +1,5 @@
 import styles from "./ActorList.module.css";
-import { getImageUrl } from "../../services/movieApi";
+import ActorComponent from "../utils/actorComponent/ActorComponent";
 
 export default function ActorList({ actors }) {
   if (!actors.length) return null;
@@ -8,20 +8,12 @@ export default function ActorList({ actors }) {
       <h2 className={styles.title}>Acteurs principaux</h2>
       <ul className={styles.actorList}>
         {actors.map((actor) => (
-          <li key={actor.id} className={styles.actorItem}>
-
-            <img
-              src={getImageUrl(actor.profile_path, "w45")}
-              alt={actor.name}
-              className={styles.actorImage}
-            />
-
-            <div className={styles.actorInfo}>
-              <span className={styles.actorName}>{actor.name}</span>
-              <span className={styles.actorChar}>{actor.character}</span>
-            </div>
-
-          </li>
+          <ActorComponent
+            key={actor.id}
+            name={actor.name}
+            character={actor.character}
+            profile_path={actor.profile_path}
+          />
         ))}
       </ul>
     </section>
