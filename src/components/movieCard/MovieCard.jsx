@@ -6,7 +6,6 @@ const IMAGE_BASE = "https://image.tmdb.org/t/p/w300";
 const MovieCard = ({ title, vote_average, id, poster_path }) => {
   return (
     <div className={styles.card}>
-
       <img
         src={
           poster_path
